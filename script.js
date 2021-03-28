@@ -7,7 +7,7 @@ var kiosk = new Proxy({
  set:function(target,key,val){
    console.log(`${target[key]} ${val}`)
    target[key] = val;
-   return true;
+  
  }
 })
 console.log(kiosk.FRUIT);
