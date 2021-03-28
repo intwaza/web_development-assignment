@@ -1,5 +1,5 @@
 var kiosk = new Proxy({
-  FRUIT: 'Mango',
+  FRUIT: "banana",
  },{
  get:function(target,key){
   return target[key]
@@ -11,7 +11,7 @@ var kiosk = new Proxy({
  }
 })
 console.log(kiosk.FRUIT);
-kiosk.FRUIT = "Banana";
+kiosk.FRUIT = "Mango";
 
 
 
